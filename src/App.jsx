@@ -22,7 +22,7 @@ export const App = () => (
       <div className=" w-full xl:max-w-[1440px] text-white flex flex-col justify-center">
         <Projects />
         <About />
-        <Footer />
+        {/*         <Footer /> */}
       </div>
     </div>
   </div>

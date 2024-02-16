@@ -27,12 +27,11 @@ const Navbar = () => {
       animate={hideNav ? "hidden" : "visible"}
       className="w-full flex py-9 px-6 sm:px-16 justify-between items-center navbar z-[2] blur-backdrop"
     >
-      Logo placeholder
       <ul className="list-none sm:flex hidden justify-end items-center flex-1 z-[1]">
         {navLinks.map((link, index) => (
           <li
             key={link.id}
-            className={`font-normal cursor-pointer text-[16px] ${
+            className={`font-normal cursor-pointer text-[16px] sm:text-[24px] ${
               index === navLinks.length - 1 ? "mr-0" : "mr-10"
             }`}
           >

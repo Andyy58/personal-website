@@ -13,9 +13,14 @@ const Projects = () => {
         </h2>
       </div>
       <div className="w-full grid sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 place-content-evenly sm:mt-5">
-        {projects.map(({ id, name, description, link }) => (
+        {projects.map(({ id, name, img, description, link }) => (
           <div className="flex justify-center" key={id}>
-            <Card name={name} description={description} link={link}></Card>
+            <Card
+              name={name}
+              description={description}
+              link={link}
+              img={img}
+            ></Card>
           </div>
         ))}
       </div>

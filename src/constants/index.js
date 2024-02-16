@@ -7,23 +7,26 @@ export const navLinks = [
 export const projects = [
   {
     id: 1,
-    name: "Project 1",
+    name: "myNotes",
+    img: "bg-[url('/images/myNotes.jpg')]",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula.",
-    link: "https://www.google.ca",
+      "Fullstack notes webapp built using the MERN stack. Includes features such as user authentication, as well as role-based read/write access.",
+    link: "https://github.com/stars/Andyy58/lists/mynotes",
   },
   {
     id: 2,
-    name: "Project 2",
+    name: "SentinelNet",
+    img: "bg-[url('/images/sentinelNet.png')]",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula.",
-    link: "https://www.google.ca",
+      "A hackathon webapp project that aims to provide scam protection for web3 transactions. Built using ReactJS for the frontend and Node.js along with Solidity for the backend.",
+    link: "https://github.com/JackyXuuu/SentinelNet",
   },
   {
     id: 3,
-    name: "Project 3",
+    name: "Redux Blog",
+    img: "bg-[url('/images/reduxBlog.jpg')]",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula.",
-    link: "https://www.google.ca",
+      "Multipage blog webapp created using React Redux for state management and webpage optimizations. Utilizes rtk query to handle api interactions.",
+    link: "https://github.com/Andyy58/React-Blog",
   },
 ];

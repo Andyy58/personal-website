@@ -1,8 +1,8 @@
-import { useState } from "react";
 import Tilt from "react-parallax-tilt";
 import { Link } from "react-router-dom";
 
-const Card = ({ name, description, link }) => {
+const Card = ({ name, img, description, link }) => {
+  console.log(img);
   return (
     <Tilt
       tiltMaxAngleX={0.01}
@@ -17,10 +17,10 @@ const Card = ({ name, description, link }) => {
       tiltReverse
       className="card grid min-h-[500px] max-w-[350px] rounded-[18px] frosted-gradient text-center overflow-auto z-[2] m-5"
     >
-      <div className="card-image bg-jingliu bg-cover"></div>
+      <div className={`card-image ${img} bg-cover`}></div>
       <div className="card-text m-6">
         <h2 className=" font-semibold text-2xl text-slate-100">{name}</h2>
-        <p className=" text-sm text-slate-300">{description}</p>
+        <p className=" text-sm text-slate-300 pt-3">{description}</p>
       </div>
       <div className="link flex justify-center">
         <Link to={link}>
