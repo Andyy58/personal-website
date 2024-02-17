@@ -12,6 +12,62 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+.sidekick {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid #87ede3;
+  font-family: "Roboto", serif;
+  font-size: 2.4em;
+  line-height: 1.5em;
+  font-weight: 100;
+}
+.sidekick:before,
+.sidekick:after {
+  font-family: Calibri;
+  color: #3bb2d6;
+  font-size: 34px;
+}
+.sidekick:before {
+  content: "\201e";
+}
+.sidekick:after {
+  content: "\201c";
+}
+.sidekick cite {
+  font-size: 50%;
+  text-align: center;
+  top: 50%;
+}
+.sidekick cite:before {
+  content: " \2015 ";
+}
+
+.bounce {
+  animation: bounce 2s linear infinite;
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 1.5s infinite;
+  animation-delay: calc(var(--i) * 0.08s);
+}
+
+@keyframes bounce {
+  0% {
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+  }
+  12% {
+    -moz-transform: translate(0, -10px);
+    transform: translate(0, -10px);
+    -webkit-transform: translate(0, -10px);
+  }
+  25%,
+  100% {
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+  }
+}
+
 .navbarlink:hover {
   background: #ffffff;
   background: -webkit-linear-gradient(
