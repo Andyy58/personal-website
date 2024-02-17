@@ -12,6 +12,37 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+.navbarlink:hover {
+  background: #ffffff;
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 35%,
+    #a6d5ff 55%,
+    #87ede3 70%,
+    #6aadb5 95%
+  );
+  background: -moz-linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 35%,
+    #a6d5ff 55%,
+    #87ede3 70%,
+    #6aadb5 95%
+  );
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 35%,
+    #a6d5ff 55%,
+    #87ede3 70%,
+    #6aadb5 95%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .navlink:active {
   background: linear-gradient(
     to bottom,
