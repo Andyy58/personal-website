@@ -1,5 +1,6 @@
 import { projects } from "../constants";
 import Card from "./Card";
+import SeeMore from "./SeeMore";
 
 const Projects = () => {
   return (
@@ -12,8 +13,8 @@ const Projects = () => {
           My Projects
         </h2>
       </div>
-      <div className="w-full grid sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 place-content-evenly sm:mt-5">
-        {projects.map(({ id, name, img, description, link }) => (
+      <div className="w-full grid sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 place-content-evenly sm:mt-5 mb-40">
+        {projects.slice(0, 3).map(({ id, name, img, description, link }) => (
           <div className="flex justify-center" key={id}>
             <Card
               name={name}
@@ -24,7 +25,9 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      {/* <div className="absolute z-[0] w-[40%] h-[35%] top-[100vh] right-[2vh] pink-gradient"></div> */}
+      <a href="https://github.com/Andyy58">
+        <SeeMore />
+      </a>
     </section>
   );
 };
